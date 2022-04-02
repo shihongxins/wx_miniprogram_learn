@@ -12,3 +12,30 @@
   </view>
   <view>子传入的信息：{{ childMsg }}</view>
 </view>
+<hr/>
+<view class="comm-comp-parent">
+  <text>兄弟组件通信</text>
+  <view class="comm-container">
+    <view>
+      <CommCompSiblingA bind:sendMsg="recvSiblingMsg" />
+    </view>
+    <view class="comm-container-msg-list">
+      <view wx:for="{{ msgRecords }}" wx:key="time">
+        <text>{{ item.time }}</text>
+        <text wx:if="{{ item.from === 'SiblingA' }}" class="a">{{ item.from }}：{{ item.msg }}</text>
+        <text wx:else class="b">{{ item.from }}：{{ item.msg }}</text>
+      </view>
+    </view>
+    <view>
+      <CommCompSiblingB bind:sendMsg="recvSiblingMsg" />
+    </view>
+  </view>
+</view>
+<hr/>
+<view>
+  <text>多层组件选择</text>
+</view>
+<hr/>
+<view>
+  <text>自定义事件监听及传播范围</text>
+</view>

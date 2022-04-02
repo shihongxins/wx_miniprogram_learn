@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "CommCompChild": "../../components/CommCompChild/CommCompChild"
+    "CommCompChild": "../../components/CommCompChild/CommCompChild",
+    "CommCompSiblingA": "../../components/CommCompSiblingA/CommCompSiblingA",
+    "CommCompSiblingB": "../../components/CommCompSiblingB/CommCompSiblingB"
   }
 }
