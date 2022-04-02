@@ -1,0 +1,4 @@
+/* components/Child1/Child1.wxss */
+.c1 {
+  background-color: lightgreen;
+}

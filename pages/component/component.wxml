@@ -1,0 +1,7 @@
+<!--pages/component/component.wxml-->
+<text>pages/component/component.wxml</text>
+<hr/>
+<Child1 name="功能组件"></Child1>
+<hr/>
+<import src="../../components/Child2/Child2"></import>
+<template is="TplChild2" data="{{content}}"></template>

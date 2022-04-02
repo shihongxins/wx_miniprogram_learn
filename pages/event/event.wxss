@@ -1,0 +1,22 @@
+/* pages/event/event.wxss */
+input {
+  border: 0.5rpx solid #ccc;
+}
+view[class] {
+  margin: auto;
+}
+.outer {
+  width: 300rpx;
+  height: 300rpx;
+  background-color: lightpink;
+}
+.middle {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: lightgreen;
+}
+.inner {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: lightblue;
+}

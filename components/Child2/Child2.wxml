@@ -1,0 +1,5 @@
+<!--components/Child2/Child2.wxml-->
+<template name="TplChild2">
+  <text>components/Child2/Child2.wxml</text>
+  <view class="c2">组件2的内容：{{content}}</view>
+</template>

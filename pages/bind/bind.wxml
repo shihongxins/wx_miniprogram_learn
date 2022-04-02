@@ -1,0 +1,38 @@
+<!--pages/bind/bind.wxml-->
+<text>pages/bind/bind.wxml</text>
+<hr/>
+<text> 内容展示 </text>
+<view>{{msg}}</view>
+<hr/>
+<text> 属性绑定 </text>
+<view id="item-{{id}}">{{msg}}</view>
+<checkbox checked="{{true}}"></checkbox>
+<hr/>
+<text> 条件渲染 </text>
+<view wx:if="{{ count > 5 }}"> {{ count }} </view>
+<view wx:elif="{{ msg && msg.length }}"> {{ msg }} </view>
+<view wx:else> {{ id }} </view>
+<block wx:if="{{ count > 5 }}">
+  <view> {{ count }} </view>
+  <view> {{ msg }} </view>
+</block>
+<view wx:else> {{ id }} </view>
+<hr/>
+<text> 列表渲染 </text>
+<view wx:for="{{['a', 'b', 'c']}}" wx:key="*this">
+  {{index}}: {{item}}
+</view>
+<hr/>
+<text> 属性误写空格 </text>
+<view class="item-{{id}} "></view>
+<!-- 将被解析为 -->
+<view class="item-{{id + ' '}}"></view>
+<view wx:for="{{[1, 2, 3]}} " wx:key="*this">{{item}}</view>
+<hr/>
+<text> 创建模板需要为 template 指明 name 属性 </text>
+<template name="item">
+  <view>{{item}}</view>
+</template>
+<hr/>
+<text> 使用模板需为 template 指明 is 属性，并通过 data 传递数据 </text>
+<template wx:for="{{[1,2,3]}}" wx:key="*this" is="item" data="{{item}}"></template>

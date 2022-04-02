@@ -1,8 +1,23 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/bind/bind",
+    "pages/event/event",
+    "pages/component/component"
   ],
+  "tabBar": {
+    "list": [{
+      "text": "数据绑定",
+      "pagePath": "pages/bind/bind"
+    },
+    {
+      "text": "事件监听",
+      "pagePath": "pages/event/event"
+    },
+    {
+      "text": "组件使用",
+      "pagePath": "pages/component/component"
+    }]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",

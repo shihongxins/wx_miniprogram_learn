@@ -1,0 +1,2 @@
+/* pages/component/component.wxss */
+@import "../../components/Child2/Child2.wxss";

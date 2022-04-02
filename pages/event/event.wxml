@@ -1,0 +1,32 @@
+<!--pages/event/event.wxml-->
+<text>pages/event/event.wxml</text>
+<hr/>
+<view>事件绑定</view>
+<!-- 只能绑定为事件名 -->
+<button bindtap="handleEvent">点击</button>
+<hr />
+<view>参数传递</view>
+<!-- 普通自定义参数为字符串类型，通过 {{}} 绑定的参数可为复杂类型 -->
+<button bindtap="handleParamsPassing" data-msg="你好" data-arr="{{[1,2,3]}}">参数传递</button>
+<hr />
+<view>页面更新</view>
+<button bindtap="handleCountIncrement">点击了 {{count}} 次</button>
+<hr />
+<view>双向绑定</view>
+<view>
+  <!-- 绑定默认值，并监听 input 时间 -->
+  <text>设置 setp ：</text><input type="number" value="{{step}}" bindinput="handleSetStep" />
+  <!-- 展示实时值 -->
+  <view>step 实时值：{{step}}</view>
+</view>
+<hr />
+<view>事件传播</view>
+<view class="outer" data-class="outer" capture-bind:tap="handleEventCapture" bindtap="handleEventBind">
+  外层
+  <view class="middle" data-class="middle" capture-bind:tap="handleEventCapture" bindtap="handleEventBind">
+    中层
+    <view class="inner" data-class="inner" capture-bind:tap="handleEventCapture" bindtap="handleEventBind">
+      内层
+    </view>
+  </view>
+</view>

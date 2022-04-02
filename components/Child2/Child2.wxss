@@ -1,0 +1,4 @@
+/* components/Child2/Child2.wxss */
+.c2 {
+  background-color: lightpink;
+}

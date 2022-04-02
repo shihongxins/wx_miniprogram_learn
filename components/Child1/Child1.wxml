@@ -1,0 +1,6 @@
+<!--components/Child1/Child1.wxml-->
+<text>components/Child1/Child1.wxml</text>
+<view class="c1">
+  组件Child1：{{msg}}{{name}}
+  <button bindtap="handleSayHi">Say Hi!</button>
+</view>
