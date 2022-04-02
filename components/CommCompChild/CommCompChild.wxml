@@ -1,0 +1,8 @@
+<!--components/CommCompChild/CommCompChild.wxml-->
+<view class="comm-comp-child">
+  <text>components/CommCompChild/CommCompChild.wxml</text>
+  <view>父传入的信息：{{ receivedMsg }}</view>
+  <view>子传出的信息：
+    <input type="text" value="{{childMsg}}" bindinput="sendChildMsg"/>
+  </view>
+</view>

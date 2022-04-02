@@ -1,0 +1,4 @@
+/* pages/communication/communication.wxss */
+.comm-comp-parent {
+  border: 1rpx solid red;
+}

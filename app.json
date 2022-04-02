@@ -1,29 +1,36 @@
 {
-  "pages":[
-    "pages/bind/bind",
+  "pages": [
+    "pages/communication/communication",
+    "pages/component/component",
     "pages/event/event",
-    "pages/component/component"
+    "pages/bind/bind"
   ],
   "tabBar": {
     "list": [{
-      "text": "数据绑定",
-      "pagePath": "pages/bind/bind"
-    },
-    {
-      "text": "事件监听",
-      "pagePath": "pages/event/event"
-    },
-    {
-      "text": "组件使用",
-      "pagePath": "pages/component/component"
-    }]
+        "text": "数据绑定",
+        "pagePath": "pages/bind/bind"
+      },
+      {
+        "text": "事件监听",
+        "pagePath": "pages/event/event"
+      },
+      {
+        "text": "组件使用",
+        "pagePath": "pages/component/component"
+      },
+      {
+        "text": "组件通信",
+        "pagePath": "pages/communication/communication"
+      }
+    ]
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
 }

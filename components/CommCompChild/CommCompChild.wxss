@@ -1,0 +1,4 @@
+/* components/CommCompChild/CommCompChild.wxss */
+.comm-comp-child {
+  border: 1rpx solid orange;
+}

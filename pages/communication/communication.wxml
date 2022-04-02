@@ -1,0 +1,14 @@
+<!--pages/communication/communication.wxml-->
+<hr/>
+<text>pages/communication/communication.wxml</text>
+<view class="comm-comp-parent">
+  <view>父子组件通信</view>
+  <view>父传出的信息：
+    <input type="text" value="{{ pageMsg }}" bindinput="sendPageMsg"/>
+  </view>
+  <view>
+    <!-- 通过数据绑定向子传递数据；通过监听自定义事件并绑定回调接收子传出的数据 -->
+    <CommCompChild receivedMsg="{{ pageMsg }}" bind:sendChildMsg="recvChildMsg" />
+  </view>
+  <view>子传入的信息：{{ childMsg }}</view>
+</view>
