@@ -1,0 +1,6 @@
+<!--components/CompLevel1/CompLevel1.wxml-->
+<view class="comp-level-1" id="comp_level_1">
+  <text>components/CompLevel1/CompLevel1.wxml</text>
+  <view>{{ timestamp }}</view>
+  <CompLevel2 id="complevel2"/>
+</view>

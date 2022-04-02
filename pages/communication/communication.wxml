@@ -32,8 +32,10 @@
   </view>
 </view>
 <hr/>
-<view>
+<view class="comm-comp-parent">
   <text>多层组件选择</text>
+  <button bindtap="updateTime">更新时间</button>
+  <CompLevel1 id="complevel1" />
 </view>
 <hr/>
 <view>

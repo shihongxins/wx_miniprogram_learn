@@ -2,6 +2,7 @@
   "usingComponents": {
     "CommCompChild": "../../components/CommCompChild/CommCompChild",
     "CommCompSiblingA": "../../components/CommCompSiblingA/CommCompSiblingA",
-    "CommCompSiblingB": "../../components/CommCompSiblingB/CommCompSiblingB"
+    "CommCompSiblingB": "../../components/CommCompSiblingB/CommCompSiblingB",
+    "CompLevel1": "../../components/CompLevel1/CompLevel1"
   }
 }

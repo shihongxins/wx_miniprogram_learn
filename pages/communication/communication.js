@@ -28,4 +28,21 @@ Page({
       msgRecords: originRecords,
     });
   },
+  // 更新时间
+  updateTime() {
+    // 通过组件内部模板的 id 查询，返回 null
+    const comp_level_1 = this.selectComponent("#comp_level_1");
+    // 通过组件内部模板的 id 查询，返回 null
+    const comp_level_2 = this.selectComponent("#comp_level_2");
+    // 通过使用组件处的标签定义的属性查询，返回组件实例
+    const CompLevel1 = this.selectComponent("#complevel1");
+    // 直接查询深层组件失败，返回 null
+    const DeepCompLevel2 = this.selectComponent("#complevel2");
+    // 一层一层的查询，返回组件实例
+    const CompLevel2 = this.selectComponent("#complevel1").selectComponent("#complevel2");
+
+    // 通过组件实例，直接操作其数据和方法
+    CompLevel1.updateTimestamp();
+    CompLevel2.updateDateTime();
+  }
 })

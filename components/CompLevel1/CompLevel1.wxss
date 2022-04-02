@@ -1,0 +1,4 @@
+/* components/CompLevel1/CompLevel1.wxss */
+.comp-level-1 {
+  border: 1rpx solid green;
+}

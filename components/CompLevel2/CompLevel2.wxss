@@ -1,0 +1,4 @@
+/* components/CompLevel2/CompLevel2.wxss */
+.comp-level-2 {
+  border: 1px solid blue;
+}
