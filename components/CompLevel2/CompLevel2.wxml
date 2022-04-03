@@ -1,0 +1,5 @@
+<!--components/CompLevel2/CompLevel2.wxml-->
+<view class="comp-level-2" id="comp_level_2">
+  <text>components/CompLevel2/CompLevel2.wxml</text>
+  <view>{{ datetime }}</view>
+</view>

@@ -1,0 +1,6 @@
+<!--components/CommCompSiblingA/CommCompSiblingA.wxml-->
+<view class="sibling">
+  <text>SiblingA</text>
+  <input type="text" value="{{msg}}" bindinput="setMsg" />
+  <button class="btn-small" bindtap="sendMsg">发送</button>
+</view>

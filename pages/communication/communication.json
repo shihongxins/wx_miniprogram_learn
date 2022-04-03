@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "CommCompChild": "../../components/CommCompChild/CommCompChild",
+    "CommCompSiblingA": "../../components/CommCompSiblingA/CommCompSiblingA",
+    "CommCompSiblingB": "../../components/CommCompSiblingB/CommCompSiblingB",
+    "CompLevel1": "../../components/CompLevel1/CompLevel1",
+    "EventComp1": "../../components/EventComp1/EventComp1",
+    "EventComp2": "../../components/EventComp2/EventComp2"
+  }
+}

@@ -1,0 +1,26 @@
+/* pages/communication/communication.wxss */
+.comm-comp-parent {
+  border: 1rpx solid red;
+}
+.comm-container {
+  display: flex;
+  height: 300rpx;
+}
+.comm-container view {
+  flex: 1;
+  overflow: hidden;
+}
+.comm-container .comm-container-msg-list {
+  font-size: 20rpx;
+  overflow: auto;
+}
+.comm-container-msg-list text {
+  display: block;
+  width: 100%;
+}
+.comm-container-msg-list .a {
+  text-align: left;
+}
+.comm-container-msg-list .b {
+  text-align: right;
+}

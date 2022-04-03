@@ -1,0 +1,41 @@
+/* pages/animate/animate.wxss */
+.animation {
+  margin: 20rpx auto;
+  width: 250rpx;
+  height: 250rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* CSS 过渡 */
+.animation.css-transition {
+  border: 1rpx solid light;
+  background-color: red;
+  transition: all 1s;
+}
+.animation.css-transition:hover {
+  width: 400rpx;
+  background-color: pink;
+}
+/* CSS 动画 */
+.animation.css-animation {
+  border: 1rpx solid greenyellow;
+  background-color: greenyellow;
+  animation: css-animation 1s linear 0s infinite alternate-reverse;
+}
+@keyframes css-animation {
+  to {
+    width: 400rpx;
+    background-color: yellow;
+  }
+}
+
+.animation.create-animation {
+  border: 1rpx solid skyblue;
+  background-color: skyblue;
+}
+
+.animation.animate {
+  border: 1rpx solid gray;
+  background-color: gray;
+}

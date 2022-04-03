@@ -1,0 +1,47 @@
+<!--pages/communication/communication.wxml-->
+<hr/>
+<text>pages/communication/communication.wxml</text>
+<view class="comm-comp-parent">
+  <view>父子组件通信</view>
+  <view>父传出的信息：
+    <input type="text" value="{{ pageMsg }}" bindinput="sendPageMsg"/>
+  </view>
+  <view>
+    <!-- 通过数据绑定向子传递数据；通过监听自定义事件并绑定回调接收子传出的数据 -->
+    <CommCompChild receivedMsg="{{ pageMsg }}" bind:sendChildMsg="recvChildMsg" />
+  </view>
+  <view>子传入的信息：{{ childMsg }}</view>
+</view>
+<hr/>
+<view class="comm-comp-parent">
+  <text>兄弟组件通信</text>
+  <view class="comm-container">
+    <view>
+      <CommCompSiblingA bind:sendMsg="recvSiblingMsg" />
+    </view>
+    <view class="comm-container-msg-list">
+      <view wx:for="{{ msgRecords }}" wx:key="time">
+        <text>{{ item.time }}</text>
+        <text wx:if="{{ item.from === 'SiblingA' }}" class="a">{{ item.from }}：{{ item.msg }}</text>
+        <text wx:else class="b">{{ item.from }}：{{ item.msg }}</text>
+      </view>
+    </view>
+    <view>
+      <CommCompSiblingB bind:sendMsg="recvSiblingMsg" />
+    </view>
+  </view>
+</view>
+<hr/>
+<view class="comm-comp-parent">
+  <text>多层组件选择</text>
+  <button bindtap="updateTime">更新时间</button>
+  <CompLevel1 id="complevel1" />
+</view>
+<hr/>
+<view class="comm-comp-parent">
+  <text>自定义事件监听及传播范围</text>
+  <EventComp1 bind:Event2="handleEvent2OnOuterTag" >
+    <!-- 作为嵌入内容传入到插槽 -->
+    <EventComp2 bind:Event2="handleEvent2OnSelfTag" />
+  </EventComp1>
+</view>

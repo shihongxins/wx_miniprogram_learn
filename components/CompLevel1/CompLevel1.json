@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "CompLevel2": "../CompLevel2/CompLevel2"
+  }
+}

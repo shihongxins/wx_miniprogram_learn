@@ -1,0 +1,14 @@
+/* components/CommCompSiblingA/CommCompSiblingA.wxss */
+.sibling {
+  margin: 0!important;
+  border: 1rpx solid yellow;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+.sibling .btn-small {
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
