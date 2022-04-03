@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "EventComp2": "../EventComp2/EventComp2"
+  }
+}

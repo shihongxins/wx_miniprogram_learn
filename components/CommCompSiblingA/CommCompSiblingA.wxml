@@ -2,5 +2,5 @@
 <view class="sibling">
   <text>SiblingA</text>
   <input type="text" value="{{msg}}" bindinput="setMsg" />
-  <button bindtap="sendMsg">发送</button>
+  <button class="btn-small" bindtap="sendMsg">发送</button>
 </view>

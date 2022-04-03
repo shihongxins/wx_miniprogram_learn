@@ -38,6 +38,10 @@
   <CompLevel1 id="complevel1" />
 </view>
 <hr/>
-<view>
+<view class="comm-comp-parent">
   <text>自定义事件监听及传播范围</text>
+  <EventComp1 bind:Event2="handleEvent2OnOuterTag" >
+    <!-- 作为嵌入内容传入到插槽 -->
+    <EventComp2 bind:Event2="handleEvent2OnSelfTag" />
+  </EventComp1>
 </view>

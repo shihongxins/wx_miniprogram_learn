@@ -5,4 +5,4 @@
 
 ### [02-语法](https://www.yuque.com/shihongxins/web/wx_miniprogram_02)
 
-### [03-通信与动画]()
+### [03-通信与动画](https://www.yuque.com/shihongxins/web/wx_miniprogram_03)

@@ -1,0 +1,5 @@
+<!--components/EventComp2/EventComp2.wxml-->
+<view class="event-comp-2" bind:Event2="handleEvent2InSelfTpl">
+  <text>components/EventComp2/EventComp2.wxml</text>
+  <button bindtap="triggerEvent2">触发自定义事件 Event2</button>
+</view>

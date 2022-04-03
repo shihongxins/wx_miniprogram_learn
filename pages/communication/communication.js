@@ -44,5 +44,12 @@ Page({
     // 通过组件实例，直接操作其数据和方法
     CompLevel1.updateTimestamp();
     CompLevel2.updateDateTime();
+  },
+  handleEvent2OnSelfTag() {
+    console.log("父页面在使用组件标签时，在组件标签上监听 Event2 并作出响应");
+  },
+  handleEvent2OnOuterTag() {
+    // 默认不会输出，说明自定义事件不会冒泡
+    console.log("父页面在使用组件标签时，在组件标签的外部上（其他包裹标签上）监听 Event2 并作出响应");
   }
 })
