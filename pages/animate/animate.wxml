@@ -1,0 +1,14 @@
+<!--pages/animate/animate.wxml-->
+<text>pages/animate/animate.wxml</text>
+<view class="animation css-transition">
+  CSS 过渡
+</view>
+<view class="animation css-animation">
+  CSS 动画
+</view>
+<view class="animation create-animation" bindtouchstart="triggerAnimation" animation="{{animationData}}">
+  createAnimation
+</view>
+<view class="animation animate" bindtouchstart="triggerAnimate">
+  animate
+</view>

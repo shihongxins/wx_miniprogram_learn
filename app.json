@@ -1,12 +1,14 @@
 {
   "pages": [
+    "pages/animate/animate",
     "pages/communication/communication",
     "pages/component/component",
     "pages/event/event",
     "pages/bind/bind"
   ],
   "tabBar": {
-    "list": [{
+    "list": [
+      {
         "text": "数据绑定",
         "pagePath": "pages/bind/bind"
       },
@@ -21,6 +23,10 @@
       {
         "text": "组件通信",
         "pagePath": "pages/communication/communication"
+      },
+      {
+        "text": "动画",
+        "pagePath": "pages/animate/animate"
       }
     ]
   },
